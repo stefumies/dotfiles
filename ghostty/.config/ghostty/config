@@ -19,7 +19,7 @@ keybind = ctrl+alt+h=goto_split:left
 keybind = ctrl+alt+l=goto_split:right
 
 # Font
-font-family = "MonaspiceKe"
+font-family = "MonaspiceKr"
 font-size = 14
 
 # Window
