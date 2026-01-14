@@ -1,7 +1,8 @@
 background-opacity = 0.95
 background-blur-radius = 40
 
-theme = Gruvbox Dark Hard
+# theme = Gruvbox Dark Hard
+theme = Builtin Solarized Dark
 
 # Key Bindings 
 

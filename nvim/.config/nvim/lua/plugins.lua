@@ -13,9 +13,10 @@ vim.pack.add({
     { src = "https://github.com/numToStr/Comment.nvim" },
     { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
     { src = "https://github.com/towolf/vim-helm" },
+    { src = "https://github.com/Tsuzat/NeoSolarized.nvim" },
 })
 
-vim.cmd("colorscheme kanagawa-dragon")
+vim.cmd("colorscheme NeoSolarized")
 
 require "oil".setup()
 require "mini.pick".setup()
@@ -26,7 +27,7 @@ require "mason".setup()
 require 'gitsigns'.setup({ signcolumn = false })
 require 'lualine'.setup({
     options = {
-        theme = "seoul256"
+        theme = "solarized"
     }
 })
 
