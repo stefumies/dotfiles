@@ -1,5 +1,5 @@
 background-opacity = 0.95
-background-blur-radius = 40
+background-blur-radius = 50
 
 # theme = Gruvbox Dark Hard
 theme = Builtin Solarized Dark
