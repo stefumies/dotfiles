@@ -1,0 +1,5 @@
+[opener]
+# This defines WHAT "edit" does (uses Vim instead of Neovim/EDITOR)
+edit = [
+    { run = 'nvim "$@"', block = true, desc = "Neovim" }
+]

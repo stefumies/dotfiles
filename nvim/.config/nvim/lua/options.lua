@@ -39,4 +39,7 @@ vim.opt.updatetime = 50
 vim.opt.clipboard:append("unnamedplus")
 vim.opt.mouse = "a"
 
+vim.opt.termsync = false
+
 vim.g.editorconfig = true
+vim.g.neovim_tty_synchronized_output=false

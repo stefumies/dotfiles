@@ -1,8 +1,8 @@
-background-opacity = 0.95
-background-blur-radius = 50
+background-opacity = 0.9
+background-blur = 90
 
 # theme = Gruvbox Dark Hard
-theme = Builtin Solarized Dark
+theme = TokyoNight Night
 
 # Key Bindings 
 
@@ -20,7 +20,7 @@ keybind = ctrl+alt+h=goto_split:left
 keybind = ctrl+alt+l=goto_split:right
 
 # Font
-font-family = "JetBrainsMono Nerd Font Mono"
+font-family = "ZedMono Nerd Font"
 font-size = 14
 
 # Window

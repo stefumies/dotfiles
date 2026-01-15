@@ -90,11 +90,15 @@ fpath+=~/.zfunc
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
+export PODMAN_COMPOSE_WARNING_LOGS=false
+export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"
+export GOPATH=$HOME/Go
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
 export PATH=$PATH:$HOME/Tools/Odin
 export PATH=$PATH:$HOME/Tools/ols
+export PATH=$PATH:$HOME/home/stephendavies/.local/bin
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -117,8 +121,15 @@ if [[ -n $SSH_CONNECTION ]]; then
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-
+alias vi=nvim
+alias vim=nvim
+alias vv=nvim
+alias pp=podman
+alias pc="podman compose"
+alias dot="cd ~/dotfiles"
+alias dev="cd ~/Development"
+alias vf="cd ~/Development/Verifone"
+#
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

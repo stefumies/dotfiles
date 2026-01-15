@@ -82,6 +82,10 @@ vim.keymap.set("n","<leader>tk", ":FloatermKill<CR>")
 vim.keymap.set("n","<leader>th", ":FloatermHide<CR>")
 vim.keymap.set("n","<leader>tn", ":FloatermNew<CR>")
 
+vim.keymap.set("n","<leader>o", ":TransparentToggle<CR>")
+
+
+
 -- Copy filepath to the clipboard --
 vim.keymap.set("n", "<leader>fp", function()
     local filePath = vim.fn.expand("%:~") -- filepath relative to home
