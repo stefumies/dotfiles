@@ -15,7 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="jonathan"
 # ZSH_THEME="p0k"
 
 # Set list of themes to pick from when loading at random
@@ -96,7 +96,8 @@ export GOPATH=$HOME/Go
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
-export PATH=$PATH:$HOME/Tools/Odin
+export PATH=$PATH:$HOME/Odin
+export PATH=$PATH:$HOME/ols
 export PATH=$PATH:$HOME/Tools/ols
 export PATH=$PATH:$HOME/home/stephendavies/.local/bin
 
@@ -129,6 +130,8 @@ alias pc="podman compose"
 alias dot="cd ~/dotfiles"
 alias dev="cd ~/Development"
 alias vf="cd ~/Development/Verifone"
+alias lz="lazygit"
+alias yz="yazi"
 #
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"

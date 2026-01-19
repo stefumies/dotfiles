@@ -9,6 +9,13 @@ vim.lsp.config('rust-analyzer', {})
 vim.lsp.config('texlab', {})
 vim.lsp.config('ts_ls', {})
 
+
+vim.lsp.config("ols", {
+    cmd = { "ols" },
+    root_markers = { "ols.json" },
+    filetypes = { "odin" },
+})
+
 vim.filetype.add({
     extension = {
         ["dockercompose"] = "dockercompose",
@@ -78,7 +85,8 @@ vim.lsp.enable({
     "rust-analyzer",
     "helm_ls",
     "docker_compose",
-    "yaml"
+    "yaml",
+    "ols"
 })
 
 vim.diagnostic.config({ virtual_text = true })

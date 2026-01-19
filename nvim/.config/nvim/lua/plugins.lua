@@ -14,7 +14,8 @@ vim.pack.add({
     { src = "https://github.com/folke/tokyonight.nvim" },
     { src = "https://github.com/xiyaowong/transparent.nvim" },
     { src = "https://github.com/folke/lsp-colors.nvim" },
-    { src = "https://github.com/ellisonleao/gruvbox.nvim" }
+    { src = "https://github.com/ellisonleao/gruvbox.nvim" },
+    { src = "https://github.com/stevearc/conform.nvim" }
 })
 
 vim.cmd("colorscheme gruvbox")
@@ -22,7 +23,7 @@ vim.cmd("colorscheme gruvbox")
 require "oil".setup()
 require "mini.pick".setup()
 require "lualine".setup({
-    theme = { "gruvbox "}
+    theme = { "gruvbox " }
 })
 require "nvim-autopairs".setup()
 require "Comment".setup()
@@ -46,4 +47,22 @@ require "nvim-treesitter".install({
     "c",
     "toml",
     "yaml"
+})
+
+require "conform".setup({
+    notify_on_error = false,
+    -- Odinfmt gets its configuration from odinfmt.json. It defaults
+    -- writing to stdout but needs to be told to read from stdin.
+    formatters = {
+        odinfmt = {
+            -- Change where to find the command if it isn't in your path.
+            command = "odinfmt",
+            args = { "-stdin" },
+            stdin = true,
+        },
+    },
+    -- and instruct conform to use odinfmt.
+    formatters_by_ft = {
+        odin = { "odinfmt" },
+    },
 })

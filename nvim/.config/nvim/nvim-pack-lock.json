@@ -8,6 +8,10 @@
       "rev": "3c55ad358c062aa4879950c4f83b4deeac6b72df",
       "src": "https://github.com/Tsuzat/NeoSolarized.nvim"
     },
+    "conform.nvim": {
+      "rev": "c2526f1cde528a66e086ab1668e996d162c75f4f",
+      "src": "https://github.com/stevearc/conform.nvim"
+    },
     "gitsigns.nvim": {
       "rev": "72acb69020c92d99cf388bfeb390481ccec50c04",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
