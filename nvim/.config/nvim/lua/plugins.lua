@@ -64,7 +64,7 @@ require("mason").setup()
 require("mason-lspconfig").setup()
 
 require("mason-tool-installer").setup({
-	ensure_installed = { "lua_ls", "stylua", "basedpyright", "ols", "clangd", "rust-analyzer" },
+	ensure_installed = { "lua_ls", "stylua", "basedpyright", "ruff", "ols", "clangd", "rust-analyzer" },
 })
 
 require("gitsigns").setup({ signcolumn = false })
@@ -123,4 +123,3 @@ require("conform").setup({
 		odin = { "odinfmt" },
 	},
 })
-

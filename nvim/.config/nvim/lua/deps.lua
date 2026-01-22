@@ -54,7 +54,7 @@ vim.lsp.enable({
     "docker_compose_language_service",
     "yaml",
     "ols",
-    "python",
+    "basedpyright",
     "ruff",
 })
 
