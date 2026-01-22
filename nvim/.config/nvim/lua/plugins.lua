@@ -17,7 +17,8 @@ vim.pack.add({
     { src = "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim" },
     { src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
     { src = "https://github.com/hrsh7th/nvim-cmp" },
-    { src = "https://github.com/folke/tokyonight.nvim" }
+    { src = "https://github.com/folke/tokyonight.nvim" },
+    { src = "https://github.com/christoomey/vim-tmux-navigator", name="vim-tmux-navigator"}
 })
 
 vim.cmd("colorscheme tokyonight-moon")
@@ -28,6 +29,8 @@ require "nvim-autopairs".setup()
 require "Comment".setup()
 require "mason".setup()
 require "mason-lspconfig".setup()
+
+
 
 require "mason-tool-installer".setup({
     "lua_ls",

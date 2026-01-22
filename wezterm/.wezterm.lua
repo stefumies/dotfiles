@@ -18,8 +18,14 @@ config.font_size = 14.0
 config.color_scheme = color_scheme_for_appearance(wezterm.gui.get_appearance())
 config.hide_tab_bar_if_only_one_tab = true
 
+config.window_padding = {
+    left = 0,
+    right = 0,
+    top = 2,
+    bottom = 0,
+}
 
 config.window_decorations = "TITLE | RESIZE"
-config.window_background_opacity = 0.9
+config.window_background_opacity = 0.95
 
 return config

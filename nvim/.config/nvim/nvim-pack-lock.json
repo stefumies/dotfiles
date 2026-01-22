@@ -95,6 +95,10 @@
     "vim-helm": {
       "rev": "2c8525fd98e57472769d137317bca83e477858ce",
       "src": "https://github.com/towolf/vim-helm"
+    },
+    "vim-tmux-navigator": {
+      "rev": "c45243dc1f32ac6bcf6068e5300f3b2b237e576a",
+      "src": "https://github.com/christoomey/vim-tmux-navigator"
     }
   }
 }
