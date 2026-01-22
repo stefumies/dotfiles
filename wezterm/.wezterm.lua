@@ -57,6 +57,18 @@ config.keys = {
 	{ key = "l", mods = "ALT", action = act.ActivatePaneDirection("Right") },
 	{ key = "k", mods = "ALT", action = act.ActivatePaneDirection("Up") },
 	{ key = "j", mods = "ALT", action = act.ActivatePaneDirection("Down") },
+    {
+        key = 'E',
+        mods = 'CTRL|SHIFT',
+        action = wezterm.action.PromptInputLine  {
+            description = 'Enter Command: ',
+            action = wezterm.action_callback(function(_, pane,line)
+                if line then
+                    pane:send_text(line .. '\n')
+                end
+            end)
+        },
+    },
 }
 
 config.ssh_domains = {
@@ -96,5 +108,7 @@ config.ssh_domains = {
 		},
 	},
 }
+
+
 
 return config
