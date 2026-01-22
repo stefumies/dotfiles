@@ -9,13 +9,11 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 
 -- Lsp --
 vim.api.nvim_create_autocmd('LspAttach', {
-    group = vim.api.nvim_create_augroup('my.lsp', {}),
+    group = vim.api.nvim_create_augroup('my.lsp', { clear = true }),
     callback = function(args)
-        local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
+        local client = vim.lsp.get_client_by_id(args.data.client_id)
+        if not client then return end
         if client:supports_method('textDocument/completion') then
-            -- Optional: trigger autocompletion on EVERY keypress. May be slow!
-            local chars = {}; for i = 32, 126 do table.insert(chars, string.char(i)) end
-            client.server_capabilities.completionProvider.triggerCharacters = chars
             vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
         end
     end,
@@ -43,3 +41,10 @@ vim.api.nvim_create_autocmd("FileType", {
         end, { buffer = true, silent = true })
     end
 })
+
+-- Show diagnostic details automatically on hover
+--vim.api.nvim_create_autocmd("CursorHold", {
+--   callback = function()
+--        vim.diagnostic.open_float(nil, { focusable = false })
+--   end
+-- })

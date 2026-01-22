@@ -1,6 +1,5 @@
 vim.pack.add({
     { src = "https://github.com/windwp/nvim-autopairs" },
-    { src = "https://github.com/rose-pine/neovim" },
     { src = "https://github.com/nvim-lualine/lualine.nvim" },
     { src = "https://github.com/stevearc/oil.nvim" },
     { src = "https://github.com/echasnovski/mini.pick" },
@@ -13,19 +12,53 @@ vim.pack.add({
     { src = "https://github.com/xiyaowong/transparent.nvim" },
     { src = "https://github.com/folke/lsp-colors.nvim" },
     { src = "https://github.com/stevearc/conform.nvim" },
+    { src = "https://github.com/neovim/nvim-lspconfig" },
+    { src = "https://github.com/mason-org/mason-lspconfig.nvim" },
+    { src = "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim" },
+    { src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
+    { src = "https://github.com/hrsh7th/nvim-cmp" },
+    { src = "https://github.com/folke/tokyonight.nvim" }
 })
 
-vim.cmd("colorscheme unokai")
+vim.cmd("colorscheme tokyonight-moon")
 
 require "oil".setup()
 require "mini.pick".setup()
-require "lualine".setup({})
 require "nvim-autopairs".setup()
 require "Comment".setup()
 require "mason".setup()
+require "mason-lspconfig".setup()
+
+require "mason-tool-installer".setup({
+    "lua_ls",
+    "stylua",
+    "basedpyright",
+    "ols",
+    "clangd",
+    "rust-analyzer",
+})
+
 require 'gitsigns'.setup({ signcolumn = false })
-require 'lualine'.setup()
+require 'lualine'.setup({
+    theme = "tokyonight"
+})
 require 'lsp-colors'.setup()
+
+local cmp = require('cmp')
+
+cmp.setup({
+    mapping = cmp.mapping.preset.insert({
+        ['<C-y>'] = cmp.mapping.confirm({ select = true }),
+        ['<Tab>'] = cmp.mapping.confirm({ select = true }), -- Force Tab to accept
+        ['<C-Space>'] = cmp.mapping.complete(),
+    }),
+    snippet = {
+        expand = function(args) vim.snippet.expand(args.body) end,
+    },
+    sources = {
+        { name = 'nvim_lsp' },
+    },
+})
 
 require "nvim-treesitter".setup({
     install_dir = vim.fn.stdpath('data') .. '/site'
@@ -41,7 +74,8 @@ require "nvim-treesitter".install({
     "lua",
     "c",
     "toml",
-    "yaml"
+    "yaml",
+    "python"
 })
 
 require "conform".setup({

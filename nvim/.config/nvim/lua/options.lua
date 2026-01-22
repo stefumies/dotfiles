@@ -32,14 +32,17 @@ vim.opt.backspace      = { "start", "eol", "indent" }
 vim.opt.splitright     = true
 vim.opt.splitbelow     = true
 
-vim.opt.completeopt = { "menuone", "popup", "noinsert" }
+vim.opt.completeopt    = { "menuone", "noselect", "popup" }
 vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.clipboard:append("unnamedplus")
 vim.opt.mouse = "a"
 
+vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'NONE', ctermbg = 'NONE' })
+vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'NONE', ctermbg = 'NONE' })
+
 vim.opt.termsync = false
 
 vim.g.editorconfig = true
-vim.g.neovim_tty_synchronized_output=false
+vim.g.neovim_tty_synchronized_output = false
