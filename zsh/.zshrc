@@ -13,8 +13,8 @@ export PATH=$PATH:$HOME/Odin
 export PATH=$PATH:$HOME/ols
 export PATH=$PATH:$HOME/Tools/ols
 export PATH=$PATH:$HOME/home/stephendavies/.local/bin
-export PATG=$PATH:/usr/share/java/pycharm-community/bin
-
+export PATH=$PATH:/usr/share/java/pycharm-community/bin
+export PATH=$PATH:/var/lib/flatpak/exports/bin
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vi'
@@ -47,6 +47,9 @@ alias lta="eza -lTag --icons"
 alias lta1="eza -lTag --level=1 --icons"
 alias lta2="eza -lTag --level=2 --icons"
 alias lta3="eza -lTag --level=3 --icons"
+
+alias wezterm="flatpak run org.wezfurlong.wezterm"
+alias wez=wezterm
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
