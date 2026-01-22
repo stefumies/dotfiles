@@ -61,6 +61,6 @@ export NVM_DIR="$HOME/.nvm"
 
 [ -f "/home/stefu/.ghcup/env" ] && . "/home/stefu/.ghcup/env" # ghcup-env
 
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-autosuggestions
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
