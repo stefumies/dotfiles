@@ -3,9 +3,18 @@ local opts = { noremap = true, silent = true }
 vim.g.mapleader = " "
 vim.g.localleader = " "
 
-
 -- Basics --
-vim.keymap.set("n", "<leader>ss", "<cmd>:source %<CR>")
+vim.keymap.set("n", "<leader>ss", function()
+	local _file = vim.api.nvim_buf_get_name(0)
+	print("sourcing... " .. _file)
+	vim.cmd("source %")
+end, { desc = "Sources current file with a message" })
+
+vim.keymap.set("n", "<leader>nnh", function()
+	vim.cmd("noh")
+end, { desc = "cancel the seach highlights" })
+
+vim.keymap.set("n", "<leader>sl", "<cmd>lua<CR>")
 vim.keymap.set("n", "<leader>w", "<cmd>:write!<CR>")
 
 -- Move whole lines up and down --
@@ -49,8 +58,12 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "x", '"_x', opts)
 
 -- Global replace word under cursor for the whole file --
-vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left>]],
-    { desc = "Replace word under cursor globally" })
+vim.keymap.set(
+	"n",
+	"<leader>s",
+	[[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left>]],
+	{ desc = "Replace word under cursor globally" }
+)
 
 -- Make an script executeable and run it inside neovim --
 vim.keymap.set("n", "<leader>xx", "<cmd>!chmod +x %<CR>", { desc = "Makes a script executeable", silent = true })
@@ -70,11 +83,13 @@ vim.keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
 vim.keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
 
 -- Mini pick --
-vim.keymap.set("n", "<leader>f", ":Pick files<CR>")
-vim.keymap.set("n", "<leader>h", ":Pick help<CR>")
+vim.keymap.set("n", "<leader>pf", "<CMD>Pick files<CR>")
+vim.keymap.set("n", "<leader>ph", "<CMD>Pick help<CR>")
+vim.keymap.set("n", "<leader>pg", "<CMD>Pick grep <CR>")
+vim.keymap.set("n", "<leader>pb", "<CMD>Pick buffers<CR>")
 
--- Oil --
-vim.keymap.set("n", "<leader>e", ":Oil<CR>")
+--- Oil --
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
 -- Float term ---
 vim.keymap.set("n", "<leader>tt", ":FloatermToggle<CR>")
@@ -82,34 +97,32 @@ vim.keymap.set("n", "<leader>tk", ":FloatermKill<CR>")
 vim.keymap.set("n", "<leader>th", ":FloatermHide<CR>")
 vim.keymap.set("n", "<leader>tn", ":FloatermNew<CR>")
 
-
 -- Diagnostics --
-vim.keymap.set('n', '<C-g>', vim.diagnostic.open_float)
-vim.keymap.set('n', '<C-gp>', vim.diagnostic.goto_prev)
-vim.keymap.set('n', '<C-pn>', vim.diagnostic.goto_next)
+vim.keymap.set("n", "<C-g>", vim.diagnostic.open_float)
+vim.keymap.set("n", "<C-gp>", vim.diagnostic.goto_prev)
+vim.keymap.set("n", "<C-pn>", vim.diagnostic.goto_next)
 
 vim.keymap.set("i", "<C-Space>", function()
-    vim.lsp.completion.get()
+	vim.lsp.completion.get()
 end, { silent = true })
-
 
 vim.keymap.set("n", "<leader>o", ":TransparentToggle<CR>")
 -- Copy filepath to the clipboard --
 vim.keymap.set("n", "<leader>fp", function()
-    local filePath = vim.fn.expand("%:~") -- filepath relative to home
-    vim.fn.setreg("+", filePath)          -- copies to current register
-    print("Filepath copied to clipboard: " .. filePath)
+	local filePath = vim.fn.expand("%:~") -- filepath relative to home
+	vim.fn.setreg("+", filePath) -- copies to current register
+	print("Filepath copied to clipboard: " .. filePath)
 end, { desc = "Copy filepath to the clipboard" })
 
-vim.keymap.set('n', '<leader>dt', function()
-    -- Checks if diagnostics are currently enabled
-    if vim.diagnostic.is_enabled() then
-        -- This disables ALL diagnostics (Red and Yellow)
-        vim.diagnostic.enable(false)
-        print("Diagnostics Hidden")
-    else
-        -- This turns them back on
-        vim.diagnostic.enable(true)
-        print("Diagnostics Enabled")
-    end
+vim.keymap.set("n", "<leader>dt", function()
+	-- Checks if diagnostics are currently enabled
+	if vim.diagnostic.is_enabled() then
+		-- This disables ALL diagnostics (Red and Yellow)
+		vim.diagnostic.enable(false)
+		print("Diagnostics Hidden")
+	else
+		-- This turns them back on
+		vim.diagnostic.enable(true)
+		print("Diagnostics Enabled")
+	end
 end, { desc = "Toggle Diagnostics" })

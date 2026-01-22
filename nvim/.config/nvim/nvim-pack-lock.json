@@ -48,6 +48,14 @@
       "rev": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65",
       "src": "https://github.com/mason-org/mason.nvim"
     },
+    "mini-nvim": {
+      "rev": "c163117900c17d4abf30bc09452a261c8536060c",
+      "src": "https://github.com/nvim-mini/mini.nvim"
+    },
+    "mini.nvim": {
+      "rev": "c163117900c17d4abf30bc09452a261c8536060c",
+      "src": "https://github.com/nvim-mini/mini.nvim"
+    },
     "mini.pick": {
       "rev": "aa242acc17683515d8f749552aebe061bced9132",
       "src": "https://github.com/echasnovski/mini.pick"
@@ -71,6 +79,10 @@
     "nvim-treesitter": {
       "rev": "5a7e5638e7d220575b1c22c8a2e099b52231886e",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "nvim-web-devicons": {
+      "rev": "803353450c374192393f5387b6a0176d0972b848",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "oil.nvim": {
       "rev": "81b8a91735ad5cd24a6b3137f14a89f19176364f",

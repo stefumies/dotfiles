@@ -1,1 +1,1 @@
-vim.lsp.config(ruff, {})
+vim.lsp.config("ruff", {})
