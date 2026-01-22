@@ -13,7 +13,8 @@ if wezterm.config_builder then
     config = wezterm.config_builder()
 end
 
-config.font = wezterm.font 'JetBrainsMono Nerd Font'
+-- config.font = wezterm.font 'JetBrainsMono Nerd Font'
+config.font = wezterm.font 'VictorMono Nerd Font'
 config.font_size = 14.0
 config.color_scheme = color_scheme_for_appearance(wezterm.gui.get_appearance())
 config.hide_tab_bar_if_only_one_tab = true
