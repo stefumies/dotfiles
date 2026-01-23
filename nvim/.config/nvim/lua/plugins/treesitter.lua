@@ -1,3 +1,5 @@
+local package_path = vim.fn.stdpath("data") .. "/site"
+
 require("nvim-treesitter").setup({
 	install_dir = package_path,
 })

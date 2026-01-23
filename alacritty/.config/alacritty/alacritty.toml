@@ -1,0 +1,45 @@
+[font]
+size = 15
+offset = { x=0, y=2}
+
+[font.bold]
+family = "VictorMono Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "VictorMono Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "VictorMono Nerd Font Mono"
+style = "Medium Italic"
+
+[font.normal]
+family = "VictorMono Nerd Font Mono"
+style = "Medium"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window.class]
+general = "Alacrity"
+
+[window]
+opacity = 0.9
+padding = { x = 2, y = 2}
+dynamic_padding = true
+blur = true
+
+[window.dimensions]
+columns = 120
+lines  = 30
+
+[cursor.style]
+blinking = "On"
+
+[terminal]
+shell = { program="/bin/zsh", args = ["-1"] }
+
+[mouse]
+hide_when_typing = true
