@@ -6,6 +6,7 @@ require("mini.indentscope").setup()
 require("mini.pairs").setup() -- Autopairs (replaces nvim-autopairs if you want)
 require("mini.comment").setup() -- Commenting (replaces Comment.nvim if you want)
 require("mini.align").setup()
+require("mini.icons").setup()
 
 require("mini.ai").setup({ n_lines = 500 }) -- Better text obects (around/inside)
 

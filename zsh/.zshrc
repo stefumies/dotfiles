@@ -19,7 +19,7 @@ export PATH=$PATH:/var/lib/flatpak/exports/bin
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vi'
  else
-   export EDITOR='nano'
+   export EDITOR='nvim'
  fi
 
 alias vi=nvim

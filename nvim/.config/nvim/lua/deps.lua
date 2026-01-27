@@ -1,3 +1,4 @@
+
 local package_path = vim.fn.stdpath("data") .. "/site"
 local mini_path = package_path .. "pack/deps/opt/mini.nvim"
 
@@ -35,12 +36,11 @@ vim.pack.add({
 	{ src = "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim" },
 	{ src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
 	{ src = "https://github.com/hrsh7th/nvim-cmp" },
-	{ src = "https://github.com/folke/tokyonight.nvim" },
 	{ src = "https://github.com/christoomey/vim-tmux-navigator", name = "vim-tmux-navigator" },
 	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
+	{ src = "https://github.com/tombi-toml/tombi" },
 })
 
-vim.cmd("colorscheme tokyonight-moon")
 
 vim.lsp.enable({
     "bashls",
@@ -56,6 +56,7 @@ vim.lsp.enable({
     "ols",
     "basedpyright",
     "ruff",
+    "tombi"
 })
 
 vim.diagnostic.config({ virtual_text = true })
