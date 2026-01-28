@@ -1,4 +1,3 @@
-
 local package_path = vim.fn.stdpath("data") .. "/site"
 local mini_path = package_path .. "pack/deps/opt/mini.nvim"
 
@@ -39,24 +38,24 @@ vim.pack.add({
 	{ src = "https://github.com/christoomey/vim-tmux-navigator", name = "vim-tmux-navigator" },
 	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
 	{ src = "https://github.com/tombi-toml/tombi" },
+	{ src = "https://github.com/Tsuzat/NeoSolarized.nvim" },
 })
 
-
 vim.lsp.enable({
-    "bashls",
-    "gopls",
-    "lua_ls",
-    "stylua",
-    "texlab",
-    "ts_ls",
-    "rust_analyzer",
-    "helm_ls",
-    "docker_compose_language_service",
-    "yaml",
-    "ols",
-    "basedpyright",
-    "ruff",
-    "tombi"
+	"bashls",
+	"gopls",
+	"lua_ls",
+	"stylua",
+	"texlab",
+	"ts_ls",
+	"rust_analyzer",
+	"helm_ls",
+	"docker_compose_language_service",
+	"yaml",
+	"ols",
+	"basedpyright",
+	"ruff",
+	"taplo",
 })
 
 vim.diagnostic.config({ virtual_text = true })

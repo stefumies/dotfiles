@@ -1,6 +1,6 @@
 vim.cmd("let g:netrw_banner = 0")
 -- vim.cmd("colorscheme default")
-vim.cmd("colorscheme miniwinter")
+vim.cmd("colorscheme NeoSolarized")
 
 vim.opt.guicursor      = ""
 vim.opt.nu             = true

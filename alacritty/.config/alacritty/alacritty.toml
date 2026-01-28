@@ -1,25 +1,20 @@
+#:schema https://json.schemastore.org/alacritty.json
+
 [general]
-import = [
-    # "~/.config/alacritty/themes/themes/ashes_dark.toml"
-    "~/.config/alacritty/themes/themes/solarized_dark.toml"
-    # "~/.config/alacritty/themes/themes/wombat.toml"
-]
+import = ["~/.config/alacritty/themes/themes/solarized_dark.toml"]
 
 [font]
-size = 18
-offset = { x=0, y=2}
+size = 15
+offset = { x = 0, y = 2 }
 
-[font.normal]
-# family = "CodeNewRoman Nerd Font"
-family = "Agave Nerd Font"
-
+family = "JetBrainsMono Nerd Font"
 
 [font.bold]
 style = "Bold"
-#
+
 [font.italic]
 style = "Regular Italic"
-#
+
 [font.bold_italic]
 style = "Bold"
 
@@ -27,24 +22,25 @@ style = "Bold"
 history = 10000
 multiplier = 3
 
-[window.class]
-general = "Alacrity"
-
 [window]
-opacity = 1.0
-padding = { x = 2, y = 2}
+opacity = 0.97
+padding = { x = 2, y = 2 }
 dynamic_padding = true
 blur = true
 
+[window.class]
+general = "Alacrity"
+
 [window.dimensions]
 columns = 120
-lines  = 30
+lines = 30
 
 [cursor.style]
 blinking = "On"
 
-[terminal]
-shell = { program="/bin/zsh", args = ["-1"] }
+[terminal.shell]
+program = "/bin/zsh"
+args = ["-l"]
 
 [mouse]
 hide_when_typing = true
