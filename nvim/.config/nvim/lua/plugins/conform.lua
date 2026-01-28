@@ -13,5 +13,6 @@ require("conform").setup({
 	-- and instruct conform to use odinfmt.
 	formatters_by_ft = {
 		odin = { "odinfmt" },
+		haskell = { "fourmolu" },
 	},
 })

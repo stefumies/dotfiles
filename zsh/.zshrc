@@ -15,6 +15,7 @@ export PATH=$PATH:$HOME/Tools/ols
 export PATH=$PATH:$HOME/home/stephendavies/.local/bin
 export PATH=$PATH:/usr/share/java/pycharm-community/bin
 export PATH=$PATH:/var/lib/flatpak/exports/bin
+export PATH=$PATH:$HOME/.ghcup/bin
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vi'
@@ -34,7 +35,7 @@ alias lz="lazygit"
 alias yz="yazi"
 alias charm="pycharm-community"
 alias tm="tmux"
-
+alias config="cd ~/.config"
 alias l="eza --icons"
 alias ls="eza --icons"
 alias ll="eza -lg --icons"

@@ -7,16 +7,21 @@ import = ["~/.config/alacritty/themes/themes/solarized_dark.toml"]
 size = 15
 offset = { x = 0, y = 2 }
 
+[font.normal]
 family = "JetBrainsMono Nerd Font"
 
 [font.bold]
+family = "JetBrainsMono Nerd Font"
 style = "Bold"
 
 [font.italic]
+family = "JetBrainsMono Nerd Font"
 style = "Regular Italic"
 
+#
 [font.bold_italic]
-style = "Bold"
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
 
 [scrolling]
 history = 10000

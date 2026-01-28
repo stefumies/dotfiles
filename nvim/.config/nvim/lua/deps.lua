@@ -39,6 +39,7 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
 	{ src = "https://github.com/tombi-toml/tombi" },
 	{ src = "https://github.com/Tsuzat/NeoSolarized.nvim" },
+	{ src = "https://github.com/mrcjkb/haskell-tools.nvim" },
 })
 
 vim.lsp.enable({
@@ -56,6 +57,7 @@ vim.lsp.enable({
 	"basedpyright",
 	"ruff",
 	"taplo",
+	"hls",
 })
 
 vim.diagnostic.config({ virtual_text = true })

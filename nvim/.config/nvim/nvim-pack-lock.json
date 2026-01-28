@@ -36,6 +36,10 @@
       "rev": "5e0a460d8e0f7f669c158dedd5f9ae2bcac31437",
       "src": "https://github.com/ellisonleao/gruvbox.nvim"
     },
+    "haskell-tools.nvim": {
+      "rev": "c7d0249f81bdcdd2b29dcf6aaf9b7926f88bc559",
+      "src": "https://github.com/mrcjkb/haskell-tools.nvim"
+    },
     "kanagawa.nvim": {
       "rev": "aef7f5cec0a40dbe7f3304214850c472e2264b10",
       "src": "https://github.com/rebelot/kanagawa.nvim"
