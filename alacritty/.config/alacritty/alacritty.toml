@@ -1,35 +1,30 @@
 #:schema https://json.schemastore.org/alacritty.json
 
+
 [general]
 import = ["~/.config/alacritty/themes/themes/solarized_dark.toml"]
+live_config_reload = true
 
 [font]
+normal = {family = "JetBrainsMono Nerd Font"}
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Regular Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
 size = 15
+builtin_box_drawing = true
 offset = { x = 0, y = 2 }
+glyph_offset = { x = 0, y= 2}
 
-[font.normal]
-family = "JetBrainsMono Nerd Font"
-
-[font.bold]
-family = "JetBrainsMono Nerd Font"
-style = "Bold"
-
-[font.italic]
-family = "JetBrainsMono Nerd Font"
-style = "Regular Italic"
-
-#
-[font.bold_italic]
-family = "JetBrainsMono Nerd Font"
-style = "Bold Italic"
+[colors]
+draw_bold_text_with_bright_colors = true
 
 [scrolling]
 history = 10000
 multiplier = 3
 
 [window]
-opacity = 0.97
-padding = { x = 2, y = 2 }
+opacity = 0.99
+padding = { x = 10, y = 10 }
 dynamic_padding = true
 blur = true
 
