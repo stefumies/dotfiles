@@ -6,6 +6,7 @@ export LANG=en_US.UTF-8
 export PODMAN_COMPOSE_WARNING_LOGS=false
 export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"
 export GOPATH=$HOME/Go
+export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
@@ -16,6 +17,7 @@ export PATH=$PATH:$HOME/home/stephendavies/.local/bin
 export PATH=$PATH:/usr/share/java/pycharm-community/bin
 export PATH=$PATH:/var/lib/flatpak/exports/bin
 export PATH=$PATH:$HOME/.ghcup/bin
+export PATH=$PATH:$HOME/flutter/bin
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vi'
@@ -60,8 +62,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-[ -f "/home/stefu/.ghcup/env" ] && . "/home/stefu/.ghcup/env" # ghcup-env
 
 source ~/.zsh/zsh-autosuggestions
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
+
+[ -f "/home/stefumies/.ghcup/env" ] && . "/home/stefumies/.ghcup/env" # ghcup-env

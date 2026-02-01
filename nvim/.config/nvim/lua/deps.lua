@@ -40,6 +40,12 @@ vim.pack.add({
 	{ src = "https://github.com/tombi-toml/tombi" },
 	{ src = "https://github.com/Tsuzat/NeoSolarized.nvim" },
 	{ src = "https://github.com/mrcjkb/haskell-tools.nvim" },
+	{ src = "https://github.com/nvim-lua/plenary.nvim" },
+	{ src = "https://github.com/nvim-telescope/telescope.nvim" },
+	{ src = "https://github.com/TamaMcGlinn/nvim-lspconfig-ada" },
+	{ src = "https://github.com/fcancelinha/nordern.nvim" },
+	{ src = "https://github.com/rebelot/kanagawa.nvim" },
+	{ src = "https://github.com/akinsho/toggleterm.nvim" },
 })
 
 vim.lsp.enable({
@@ -58,6 +64,8 @@ vim.lsp.enable({
 	"ruff",
 	"taplo",
 	"hls",
+	"als",
+	"dartls",
 })
 
 vim.diagnostic.config({ virtual_text = true })

@@ -91,11 +91,9 @@ vim.keymap.set("n", "<leader>pb", "<CMD>Pick buffers<CR>")
 --- Oil --
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
--- Float term ---
-vim.keymap.set("n", "<leader>tt", ":FloatermToggle<CR>")
-vim.keymap.set("n", "<leader>tk", ":FloatermKill<CR>")
-vim.keymap.set("n", "<leader>th", ":FloatermHide<CR>")
-vim.keymap.set("n", "<leader>tn", ":FloatermNew<CR>")
+-- Telescope --
+vim.keymap.set("n", "<leader>tff", "<CMD>Telescope find_files<CR>")
+vim.keymap.set("n", "<leader>tbb", "<CMD>Telescope buffers<CR>")
 
 -- Diagnostics --
 vim.keymap.set("n", "<C-g>", vim.diagnostic.open_float)
