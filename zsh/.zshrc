@@ -6,6 +6,7 @@ export LANG=en_US.UTF-8
 export PODMAN_COMPOSE_WARNING_LOGS=false
 export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"
 export GOPATH=$HOME/Go
+export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/bin

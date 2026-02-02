@@ -16,4 +16,6 @@ require("nvim-treesitter").install({
 	"toml",
 	"yaml",
 	"python",
+    "clojure",
+    "dart"
 })
