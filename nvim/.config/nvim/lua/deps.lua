@@ -43,8 +43,10 @@ vim.pack.add({
 	{ src = "https://github.com/nvim-telescope/telescope.nvim" },
 	{ src = "https://github.com/TamaMcGlinn/nvim-lspconfig-ada" },
 	{ src = "https://github.com/rebelot/kanagawa.nvim" },
-	{ src = "https://github.com/akinsho/toggleterm.nvim" },
 	{ src = "https://github.com/Olical/conjure" },
+	{ src = "https://github.com/nvimdev/dashboard-nvim" },
+	{ src = "https://github.com/folke/trouble.nvim" },
+	{ src = "https://github.com/numToStr/FTerm.nvim" },
 })
 
 vim.lsp.enable({
@@ -57,6 +59,7 @@ vim.lsp.enable({
 	"helm_ls",
 	"hls",
 	"lua_ls",
+	"ocamllsp",
 	"ols",
 	"ruff",
 	"rust_analyzer",

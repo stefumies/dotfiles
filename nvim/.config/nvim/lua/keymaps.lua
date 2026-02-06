@@ -66,7 +66,7 @@ vim.keymap.set(
 )
 
 -- Make an script executeable and run it inside neovim --
-vim.keymap.set("n", "<leader>xx", "<cmd>!chmod +x %<CR>", { desc = "Makes a script executeable", silent = true })
+-- vim.keymap.set("n", "<leader>xx", "<cmd>!chmod +x %<CR>", { desc = "Makes a script executeable", silent = true })
 
 -- If we want tabs --
 vim.keymap.set("n", "<leader>to", "<cmd>tabnew<CR>")
@@ -99,6 +99,9 @@ vim.keymap.set("n", "<leader>tbb", "<CMD>Telescope buffers<CR>")
 vim.keymap.set("n", "<C-g>", vim.diagnostic.open_float)
 vim.keymap.set("n", "<C-gp>", vim.diagnostic.goto_prev)
 vim.keymap.set("n", "<C-pn>", vim.diagnostic.goto_next)
+
+-- Get out of terminal mode easier --
+vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Escape terminal mode" })
 
 vim.keymap.set("i", "<C-Space>", function()
 	vim.lsp.completion.get()

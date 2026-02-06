@@ -17,5 +17,6 @@ require("nvim-treesitter").install({
 	"yaml",
 	"python",
     "clojure",
-    "dart"
+    "dart",
+    "ocaml"
 })

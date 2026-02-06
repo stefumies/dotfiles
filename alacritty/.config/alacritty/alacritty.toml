@@ -2,15 +2,15 @@
 
 
 [general]
-import = ["~/.config/alacritty/themes/themes/kanagawa_dragon.toml"]
+import = ["~/.config/alacritty/themes/themes/solarized_dark.toml"]
 live_config_reload = true
 
 [font]
-normal = { family = "MonaspiceAr Nerd Font" }
-bold = { family = "MonaspiceAr Nerd Font", style = "Medium" }
+normal = { family = "JetBrainsMono Nerd Font" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Medium" }
 italic = { family = "MonaspiceRn Nerd Font", style = "Medium Italic" }
 bold_italic = { family = "MonaspiceRn Nerd Font", style = "Bold Italic" }
-size = 14
+size = 16
 
 # builtin_box_drawing = true
 offset = { x = 0, y = 2 }
@@ -24,7 +24,7 @@ history = 10000
 multiplier = 3
 
 [window]
-opacity = 0.96
+opacity = 1
 padding = { x = 10, y = 10 }
 dynamic_padding = true
 blur = true

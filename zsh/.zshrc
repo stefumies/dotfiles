@@ -1,4 +1,4 @@
-export TERM=xterm-256color
+# export TERM=xterm-256color
 
 fpath+=~/.zfunc
 
@@ -63,6 +63,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+
+[[ ! -r '/home/stephendavies/.opam/opam-init/init.zsh' ]] || source '/home/stephendavies/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 
 source ~/.zsh/zsh-autosuggestions
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
