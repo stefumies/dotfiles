@@ -9,6 +9,7 @@ require("color")
 
 require("plugins.mini-config")
 require("plugins.mason")
+require("plugins.fidget")
 require("plugins.oil")
 require("plugins.treesitter")
 require("plugins.cmp-config")
