@@ -16,6 +16,10 @@
       "rev": "93f3bed009f7fc4c57f8d710880b6cab9e0b0d15",
       "src": "https://github.com/Mofiqul/adwaita.nvim"
     },
+    "aerial.nvim": {
+      "rev": "7a6a42791eb2b54a7115c7db4488981f93471770",
+      "src": "https://github.com/stevearc/aerial.nvim"
+    },
     "autoclose.nvim": {
       "rev": "3f86702b54a861a17d7994b2e32a7c648cb12fb1",
       "src": "https://github.com/m4xshen/autoclose.nvim"
@@ -43,6 +47,10 @@
     "dashboard-nvim": {
       "rev": "0775e567b6c0be96d01a61795f7b64c1758262f6",
       "src": "https://github.com/nvimdev/dashboard-nvim"
+    },
+    "everforest-nvim": {
+      "rev": "557bce922401e247a596583679bc181d4d688554",
+      "src": "https://github.com/neanias/everforest-nvim"
     },
     "fzf-lua": {
       "rev": "b8d1356b7120f5cf111709cb2fa504096248fb26",

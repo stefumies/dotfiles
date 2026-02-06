@@ -47,6 +47,8 @@ vim.pack.add({
 	{ src = "https://github.com/nvimdev/dashboard-nvim" },
 	{ src = "https://github.com/folke/trouble.nvim" },
 	{ src = "https://github.com/numToStr/FTerm.nvim" },
+	{ src = "https://github.com/neanias/everforest-nvim" },
+    { src = "https://github.com/stevearc/aerial.nvim" }
 })
 
 vim.lsp.enable({

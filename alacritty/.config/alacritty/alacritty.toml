@@ -1,16 +1,15 @@
 #:schema https://json.schemastore.org/alacritty.json
 
-
 [general]
-import = ["~/.config/alacritty/themes/themes/solarized_dark.toml"]
+import = ["~/.config/alacritty/themes/themes/everforest_dark.toml"]
 live_config_reload = true
 
 [font]
 normal = { family = "JetBrainsMono Nerd Font" }
 bold = { family = "JetBrainsMono Nerd Font", style = "Medium" }
-italic = { family = "MonaspiceRn Nerd Font", style = "Medium Italic" }
+italic = { family = "MonaspiceRn Nerd Font", style = "Medium Italic"}
 bold_italic = { family = "MonaspiceRn Nerd Font", style = "Bold Italic" }
-size = 16
+size = 14
 
 # builtin_box_drawing = true
 offset = { x = 0, y = 2 }

@@ -9,7 +9,7 @@ local function run_shell_in_float()
 		local height = math.floor(vim.o.lines * 0.8)
 
 		local buf = vim.api.nvim_create_buf(false, true)
-		local win = vim.api.nvim_open_win(buf, true, {
+		vim.api.nvim_open_win(buf, true, {
 			relative = "editor",
 			width = width,
 			height = height,
@@ -19,9 +19,9 @@ local function run_shell_in_float()
 			border = "rounded",
 		})
 
-		vim.fn.termopen(input)
+		vim.cmd("terminal " .. input)
 		vim.cmd("startinsert")
 	end)
 end
 
-vim.keymap.set("n", "<leader>rr", run_shell_in_float, { desc = "Run Shell Command (Native)" })
+vim.keymap.set("n", "<leader>rx", run_shell_in_float, { desc = "Run Shell Command (Native)" })

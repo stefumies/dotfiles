@@ -10,10 +10,6 @@ vim.keymap.set("n", "<leader>ss", function()
 	vim.cmd("source %")
 end, { desc = "Sources current file with a message" })
 
-vim.keymap.set("n", "<leader>nnh", function()
-	vim.cmd("noh")
-end, { desc = "cancel the seach highlights" })
-
 vim.keymap.set("n", "<leader>sl", "<cmd>lua<CR>")
 vim.keymap.set("n", "<leader>w", "<cmd>:write!<CR>")
 
@@ -101,7 +97,8 @@ vim.keymap.set("n", "<C-gp>", vim.diagnostic.goto_prev)
 vim.keymap.set("n", "<C-pn>", vim.diagnostic.goto_next)
 
 -- Get out of terminal mode easier --
-vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Escape terminal mode" })
+vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Escape terminal mode"})
+
 
 vim.keymap.set("i", "<C-Space>", function()
 	vim.lsp.completion.get()
