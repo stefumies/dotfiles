@@ -51,6 +51,8 @@ vim.pack.add({
 	{ src = "https://github.com/stevearc/aerial.nvim" },
 	{ src = "https://github.com/j-hui/fidget.nvim" },
 	{ src = "https://github.com/vimpostor/vim-tpipeline" },
+	{ src = "https://github.com/abecodes/tabout.nvim" },
+	{ src = "https://github.com/Wansmer/treesj" },
 })
 
 vim.lsp.enable({

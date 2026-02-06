@@ -21,6 +21,8 @@ require("plugins.trouble")
 require("plugins.fterm")
 require("plugins.aerial")
 require("plugins.ts")
+require("plugins.tbout")
+require("plugins.trj")
 
 require("lsp.bash")
 require("lsp.dartls")
