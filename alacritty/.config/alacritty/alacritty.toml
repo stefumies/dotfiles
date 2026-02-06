@@ -44,3 +44,6 @@ args = ["-l"]
 
 [mouse]
 hide_when_typing = true
+
+[env]
+TERM = "xterm-256color"

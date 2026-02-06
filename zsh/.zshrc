@@ -2,6 +2,10 @@
 
 fpath+=~/.zfunc
 
+# Enable zsh completion
+autoload -Uz compinit
+compinit
+
 export LANG=en_US.UTF-8
 export PODMAN_COMPOSE_WARNING_LOGS=false
 export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"
@@ -61,7 +65,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
 [[ ! -r '/home/stephendavies/.opam/opam-init/init.zsh' ]] || source '/home/stephendavies/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
