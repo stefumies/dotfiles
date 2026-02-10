@@ -1,7 +1,5 @@
-local ef = require("everforest")
+local vsc = require("vscode")
 --
-ef.setup({
-	background = "hard",
-})
+vsc.setup({})
 
-vim.cmd("colorscheme everforest")
+vim.cmd("colorscheme vscode")

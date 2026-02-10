@@ -1,7 +1,7 @@
 #:schema https://json.schemastore.org/alacritty.json
 
 [general]
-import = ["~/.config/alacritty/themes/themes/everforest_dark.toml"]
+import = ["~/.config/alacritty/themes/themes/vscode.toml"]
 live_config_reload = true
 
 [font]

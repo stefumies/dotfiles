@@ -13,6 +13,7 @@ export GOPATH=$HOME/Go
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/local/bin
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
 export PATH=$PATH:$HOME/Odin

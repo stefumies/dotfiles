@@ -53,6 +53,7 @@ vim.pack.add({
 	{ src = "https://github.com/vimpostor/vim-tpipeline" },
 	{ src = "https://github.com/abecodes/tabout.nvim" },
 	{ src = "https://github.com/Wansmer/treesj" },
+	{ src = "https://github.com/Mofiqul/vscode.nvim" },
 })
 
 vim.lsp.enable({
