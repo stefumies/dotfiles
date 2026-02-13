@@ -1,0 +1,3 @@
+[submodule "alacritty/.config/alacritty/alacritty-auto-theme"]
+	path = alacritty/.config/alacritty/alacritty-auto-theme
+	url = https://github.com/shombando/alacritty-auto-theme.git
