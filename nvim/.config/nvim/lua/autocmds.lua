@@ -55,9 +55,3 @@ vim.api.nvim_create_autocmd("CursorHold", {
 -- 2. Live update: Re-runs the function whenever you focus the window
 local theme_grp = vim.api.nvim_create_augroup("ThemeSync", { clear = true })
 
-vim.api.nvim_create_autocmd({ "FocusGained" }, {
-	group = theme_grp,
-	callback = function()
-		require("colors").sync_system_theme()
-	end,
-})

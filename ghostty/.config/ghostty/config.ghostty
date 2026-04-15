@@ -1,0 +1,38 @@
+# Typography
+font-family = "JetBrainsMono Nerd Font"
+font-size = 16
+
+# Theme (Official Built-in Name)
+# 'nord' is one of the most stable built-in themes in Ghostty's resources
+theme = Modus Vivendi Tinted
+
+# Window Geometry (Fixes the "too small" issue)
+# These set the initial grid size so the window is actually usable
+window-width = 120
+window-height = 35
+window-padding-x = 10
+window-padding-y = 10
+
+# Vim-style split navigation (Strict Syntax)
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:bottom
+keybind = ctrl+k=goto_split:top
+keybind = ctrl+l=goto_split:right
+
+# Vim-style split creation
+keybind = ctrl+alt+v=new_split:right
+keybind = ctrl+alt+s=new_split:down
+
+# Clipboard Integration
+keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+shift+v=paste_from_clipboard
+
+# Selection behavior
+copy-on-select = true
+keybind = ctrl+shift+d=toggle_window_decorations
+
+# Clear the screen
+keybind = ctrl+alt+l=clear_screen
+
+# Fullscreen Toggle
+keybind = ctrl+alt+f=toggle_fullscreen

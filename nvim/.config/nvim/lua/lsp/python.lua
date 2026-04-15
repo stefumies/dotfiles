@@ -16,21 +16,4 @@ vim.lsp.config("basedpyright", {
 	},
 	capabilities = caps,
 	single_file_support = true,
-	settings = {
-		python = {
-			analysis = {
-				typeCheckingMode = "off",
-				diagnosticSeverityOverrides = {
-					reportMissingParameterType = "none",
-					reportMissingTypeArgument = "none",
-					reportUnknownParameterType = "none",
-					reportUnknownArgumentType = "none",
-					reportUnknownLambdaType = "none",
-					reportUnknownVariableType = "none",
-					reportUnknownMemberType = "none",
-					reportMissingModuleSource = "none",
-				},
-			},
-		},
-	},
 })

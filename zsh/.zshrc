@@ -24,6 +24,7 @@ export PATH=$PATH:/usr/share/java/pycharm-community/bin
 export PATH=$PATH:/var/lib/flatpak/exports/bin
 export PATH=$PATH:$HOME/.ghcup/bin
 export PATH=$PATH:$HOME/flutter/bin
+export PATH=$PATH:$HOME/.pyenv/bin
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vi'
@@ -35,7 +36,7 @@ alias vi=nvim
 alias vim=nvim
 alias vv=nvim
 alias pp=podman
-alias pc="podman compose"
+alias pc="podman-compose"
 alias dot="cd ~/dotfiles"
 alias dev="cd ~/Development"
 alias vf="cd ~/Development/Verifone"
