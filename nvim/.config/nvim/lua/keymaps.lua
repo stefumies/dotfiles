@@ -69,6 +69,7 @@ vim.keymap.set("n", "<leader>to", "<cmd>tabnew<CR>")
 vim.keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>")
 vim.keymap.set("n", "<leader>tn", "<cmd>tabn<CR>")
 vim.keymap.set("n", "<leader>tp", "<cmd>tabp<CR>")
+--
 -- opens current tab in a new tab --
 vim.keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>")
 
@@ -93,18 +94,26 @@ vim.keymap.set("n", "<leader>tbb", "<CMD>Telescope buffers<CR>")
 
 -- Diagnostics --
 vim.keymap.set("n", "<C-g>", vim.diagnostic.open_float)
-vim.keymap.set("n", "<C-gp>", vim.diagnostic.goto_prev)
-vim.keymap.set("n", "<C-pn>", vim.diagnostic.goto_next)
+
+vim.keymap.set("n", "<leader>k", function()
+	vim.diagnostic.jump({ count = -1 })
+end, { desc = "Previous Diagnostic" })
+
+vim.keymap.set("n", "<leader>j", function()
+	vim.diagnostic.jump({ count = 1 })
+end, { desc = "Next Diagnostic" })
+
+vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Line diagnostics" })
 
 -- Get out of terminal mode easier --
-vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Escape terminal mode"})
-
+vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { desc = "Escape terminal mode" })
 
 vim.keymap.set("i", "<C-Space>", function()
 	vim.lsp.completion.get()
 end, { silent = true })
 
-vim.keymap.set("n", "<leader>o", ":TransparentToggle<CR>")
+vim.keymap.set("n", "<leader>to", ":TransparentToggle<CR>")
+
 -- Copy filepath to the clipboard --
 vim.keymap.set("n", "<leader>fp", function()
 	local filePath = vim.fn.expand("%:~") -- filepath relative to home

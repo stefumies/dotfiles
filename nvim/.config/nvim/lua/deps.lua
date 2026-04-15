@@ -21,10 +21,8 @@ require("mini.deps").setup({
 
 vim.pack.add({
 	{ src = "https://github.com/stevearc/oil.nvim" },
-	{ src = "https://github.com/echasnovski/mini.pick" },
 	{ src = "https://github.com/mason-org/mason.nvim" },
 	{ src = "https://github.com/lewis6991/gitsigns.nvim" },
-	{ src = "https://github.com/voldikss/vim-floaterm" },
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
 	{ src = "https://github.com/towolf/vim-helm" },
 	{ src = "https://github.com/xiyaowong/transparent.nvim" },
@@ -37,24 +35,18 @@ vim.pack.add({
 	{ src = "https://github.com/hrsh7th/nvim-cmp" },
 	{ src = "https://github.com/christoomey/vim-tmux-navigator", name = "vim-tmux-navigator" },
 	{ src = "https://github.com/nvim-tree/nvim-web-devicons" },
-	{ src = "https://github.com/tombi-toml/tombi" },
-	{ src = "https://github.com/mrcjkb/haskell-tools.nvim" },
 	{ src = "https://github.com/nvim-lua/plenary.nvim" },
 	{ src = "https://github.com/nvim-telescope/telescope.nvim" },
 	{ src = "https://github.com/TamaMcGlinn/nvim-lspconfig-ada" },
-	{ src = "https://github.com/rebelot/kanagawa.nvim" },
 	{ src = "https://github.com/Olical/conjure" },
 	{ src = "https://github.com/nvimdev/dashboard-nvim" },
 	{ src = "https://github.com/folke/trouble.nvim" },
 	{ src = "https://github.com/numToStr/FTerm.nvim" },
-	{ src = "https://github.com/neanias/everforest-nvim" },
 	{ src = "https://github.com/stevearc/aerial.nvim" },
 	{ src = "https://github.com/j-hui/fidget.nvim" },
 	{ src = "https://github.com/vimpostor/vim-tpipeline" },
 	{ src = "https://github.com/abecodes/tabout.nvim" },
 	{ src = "https://github.com/Wansmer/treesj" },
-	{ src = "https://github.com/Mofiqul/vscode.nvim" },
-    { src = "https://github.com/rose-pine/neovim"}
 })
 
 vim.lsp.enable({
