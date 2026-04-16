@@ -4,7 +4,9 @@ font-size = 16
 
 # Theme (Official Built-in Name)
 # 'nord' is one of the most stable built-in themes in Ghostty's resources
-theme = Modus Vivendi Tinted
+theme = Broadcast
+
+keybind = ctrl+enter=text:\x0d
 
 # Window Geometry (Fixes the "too small" issue)
 # These set the initial grid size so the window is actually usable
