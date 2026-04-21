@@ -4,7 +4,7 @@ font-size = 16
 
 # Theme (Official Built-in Name)
 # 'nord' is one of the most stable built-in themes in Ghostty's resources
-theme = Broadcast
+theme = GitLab Dark Grey
 
 keybind = ctrl+enter=text:\x0d
 
