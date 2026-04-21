@@ -17,7 +17,7 @@ require("dashboard").setup({
 			{
 				desc = " Apps",
 				group = "DiagnosticHint",
-				action = "Telescope app",
+				action = "Telescope builtin",
 				key = "a",
 			},
 			{
