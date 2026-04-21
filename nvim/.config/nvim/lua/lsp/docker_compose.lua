@@ -1,4 +1,4 @@
-vim.lsp.config("docker_compose", {
+vim.lsp.config("docker_compose_language_service", {
 	cmd = { "docker-compose-language-service", "--stdio" },
 	filetypes = {
 		"yaml.docker-compose",

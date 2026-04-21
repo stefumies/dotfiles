@@ -5,7 +5,7 @@ require("dashboard").setup({
 			enable = true,
 		},
 		shortcut = {
-			{ desc = "󰊳 Update", group = "@property", action = "Lazy update", key = "u" },
+			{ desc = "󰊳 Update", group = "@property", action = "DepsUpdate", key = "u" },
 			{
 				icon = " ",
 				icon_hl = "@variable",
@@ -23,7 +23,7 @@ require("dashboard").setup({
 			{
 				desc = " dotfiles",
 				group = "Number",
-				action = "Telescope dotfiles",
+				action = "lua require('oil').open(vim.fn.expand('~/dotfiles'))",
 				key = "d",
 			},
 		},

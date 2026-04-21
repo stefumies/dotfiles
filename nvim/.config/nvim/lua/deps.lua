@@ -2,7 +2,7 @@ local package_path = vim.fn.stdpath("data") .. "/site"
 local mini_path = package_path .. "pack/deps/opt/mini.nvim"
 
 -- If mini.nvim isn't on the path, add it manually
-if not vim.loop.fs_stat(mini_path) then
+if not vim.uv.fs_stat(mini_path) then
 	print("Installing mini.nvim...")
 	vim.fn.system({
 		"git",

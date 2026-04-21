@@ -88,10 +88,6 @@ vim.keymap.set("n", "<leader>pb", "<CMD>Pick buffers<CR>")
 --- Oil --
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
--- Telescope --
-vim.keymap.set("n", "<leader>tff", "<CMD>Telescope find_files<CR>")
-vim.keymap.set("n", "<leader>tbb", "<CMD>Telescope buffers<CR>")
-
 -- Diagnostics --
 vim.keymap.set("n", "<C-g>", vim.diagnostic.open_float)
 
@@ -112,7 +108,7 @@ vim.keymap.set("i", "<C-Space>", function()
 	vim.lsp.completion.get()
 end, { silent = true })
 
-vim.keymap.set("n", "<leader>to", ":TransparentToggle<CR>")
+vim.keymap.set("n", "<leader>tr", ":TransparentToggle<CR>")
 
 -- Copy filepath to the clipboard --
 vim.keymap.set("n", "<leader>fp", function()
