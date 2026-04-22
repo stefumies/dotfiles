@@ -116,6 +116,10 @@
       "rev": "cf2a288696b03d0934da713d66c6d71557b5c997",
       "src": "https://github.com/rose-pine/neovim"
     },
+    "neovim-ayu": {
+      "rev": "e5a9f0fa2918d6b5f57c21b3ac014314ee5e41c8",
+      "src": "https://github.com/shatur/neovim-ayu"
+    },
     "nordern.nvim": {
       "rev": "d771d8dbd74f5c248d53a7dfd33247e59b631d9f",
       "src": "https://github.com/fcancelinha/nordern.nvim"
@@ -163,6 +167,10 @@
     "oil.nvim": {
       "rev": "81b8a91735ad5cd24a6b3137f14a89f19176364f",
       "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "onedarkpro.nvim": {
+      "rev": "f5fddfd5122fe00421e199151ae4fe8571a02898",
+      "src": "https://github.com/olimorris/onedarkpro.nvim"
     },
     "overseer.nvim": {
       "rev": "5828bdbd86677497613033c142f0a8624489216f",

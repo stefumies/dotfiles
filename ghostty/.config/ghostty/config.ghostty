@@ -1,11 +1,11 @@
-# Typography
+# typography
 font-family = "JetBrainsMono Nerd Font"
 font-size = 16
 
 # Theme (Official Built-in Name)
 # 'nord' is one of the most stable built-in themes in Ghostty's resources
-theme = Gruvbox Material
-
+# theme = GitLab Dark Grey
+theme = Desert
 keybind = ctrl+enter=text:\x0d
 
 # Window Geometry (Fixes the "too small" issue)
