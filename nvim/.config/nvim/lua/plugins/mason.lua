@@ -14,6 +14,7 @@ require("mason-tool-installer").setup({
 		"gopls",
         "helm-ls",
 		"lua_ls",
+        "marksman",
         "ocamlformat",
 		"ols",
 		"ruff",

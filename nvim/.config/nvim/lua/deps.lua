@@ -47,6 +47,7 @@ vim.pack.add({
 	{ src = "https://github.com/vimpostor/vim-tpipeline" },
 	{ src = "https://github.com/abecodes/tabout.nvim" },
 	{ src = "https://github.com/Wansmer/treesj" },
+	{ src = "https://github.com/toppair/peek.nvim" },
 })
 
 vim.lsp.enable({
@@ -59,6 +60,7 @@ vim.lsp.enable({
 	"helm_ls",
 	"hls",
 	"lua_ls",
+    "marksman",
 	"ocamllsp",
 	"ols",
 	"ruff",

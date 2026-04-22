@@ -25,7 +25,7 @@ export PATH=$PATH:/var/lib/flatpak/exports/bin
 export PATH=$PATH:$HOME/.ghcup/bin
 export PATH=$PATH:$HOME/flutter/bin
 export PATH=$PATH:$HOME/.pyenv/bin
-[[ -f "$HOME/.secrets" ]] && source "$HOME/.secrets"
+# [[ -f "$HOME/.secrets" ]] && source "$HOME/.secrets"
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vi'
@@ -77,3 +77,4 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
 
 [ -f "/home/stefumies/.ghcup/env" ] && . "/home/stefumies/.ghcup/env" # ghcup-env
+. "/home/stephendavies/.deno/env"

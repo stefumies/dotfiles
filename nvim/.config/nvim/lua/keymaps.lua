@@ -85,6 +85,18 @@ vim.keymap.set("n", "<leader>ph", "<CMD>Pick help<CR>")
 vim.keymap.set("n", "<leader>pg", "<CMD>Pick grep <CR>")
 vim.keymap.set("n", "<leader>pb", "<CMD>Pick buffers<CR>")
 
+-- Peek --
+vim.keymap.set("n", "<leader>mm", function()
+	local peek = require("peek")
+	if peek.is_open() then
+		peek.close()
+		vim.notify("Peek preview closed", vim.log.levels.INFO)
+	else
+		peek.open()
+		vim.notify("Peek preview opened", vim.log.levels.INFO)
+	end
+end, { desc = "Markdown: toggle Peek preview" })
+
 --- Oil --
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 

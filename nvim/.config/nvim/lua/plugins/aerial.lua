@@ -1,7 +1,10 @@
 local aerial = require("aerial")
 
 aerial.setup({
-	backends = { "lsp", "treesitter" },
+	backends = {
+		["_"] = { "lsp", "treesitter" },
+		markdown = { "lsp", "markdown" },
+	},
 	layout = {
 		min_width = 28,
 		default_direction = "right",
