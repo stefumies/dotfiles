@@ -44,8 +44,10 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 -- Clear search highglights"
 vim.keymap.set("n", "<C-c>", ":nohl<CR>", { desc = "clear highlights", silent = true })
 
--- LSP format buffer --
-vim.keymap.set("n", "<leader>ff", vim.lsp.buf.format)
+-- Format buffer (conform, with LSP fallback) --
+vim.keymap.set("n", "<leader>ff", function()
+	require("conform").format({ async = true, lsp_format = "fallback" })
+end, { desc = "format buffer" })
 
 -- disable capital Q --
 vim.keymap.set("n", "Q", "<nop>")

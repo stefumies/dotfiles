@@ -27,3 +27,14 @@ vim.api.nvim_create_autocmd("CursorHold", {
 		vim.diagnostic.open_float(nil, { focusable = false })
 	end,
 })
+
+-- tpipeline: initialise after the UI is attached. vim.pack.add sources the
+-- plugin before the UI is ready, so its own VimEnter-style guard bails out.
+vim.api.nvim_create_autocmd("VimEnter", {
+	group = vim.api.nvim_create_augroup("my.tpipeline", { clear = true }),
+	callback = function()
+		if vim.env.TMUX and vim.env.TMUX ~= "" then
+			pcall(vim.fn["tpipeline#initialize"])
+		end
+	end,
+})

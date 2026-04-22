@@ -1,5 +1,5 @@
 require("conform").setup({
-	notify_on_error = false,
+	notify_on_error = true,
 	-- Odinfmt gets its configuration from odinfmt.son. It defaults
 	-- writing to stdout but needs to be told to read from stdin.
 	formatters = {
@@ -14,5 +14,7 @@ require("conform").setup({
 	formatters_by_ft = {
 		odin = { "odinfmt" },
 		haskell = { "fourmolu" },
+		markdown = { "prettier" },
+		html = { "prettier" },
 	},
 })

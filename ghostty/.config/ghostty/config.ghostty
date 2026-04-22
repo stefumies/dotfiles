@@ -4,9 +4,10 @@
 font-family = "Fira Code Nerd Font"
 font-size = 16.5
 
+background-opacity = 0.96
+background-blur = true
+
 # Theme (Official Built-in Name)
-# 'nord' is one of the most stable built-in themes in Ghostty's resources
-# theme = GitLab Dark Grey
 theme = Desert
 keybind = ctrl+enter=text:\x0d
 

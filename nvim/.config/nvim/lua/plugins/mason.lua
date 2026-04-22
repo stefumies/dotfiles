@@ -4,6 +4,7 @@ require("mason-lspconfig").setup()
 
 require("mason-tool-installer").setup({
 	ensure_installed = {
+		"astro-language-server",
 		"basedpyright",
 		"bash-language-server",
 		"clangd",
@@ -13,9 +14,11 @@ require("mason-tool-installer").setup({
 		"fourmolu",
 		"gopls",
         "helm-ls",
+		"html-lsp",
 		"lua_ls",
         "marksman",
         "ocamlformat",
+		"prettier",
 		"ols",
 		"ruff",
 		"rust-analyzer",

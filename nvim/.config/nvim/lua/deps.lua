@@ -53,6 +53,7 @@ vim.pack.add({
 })
 
 vim.lsp.enable({
+	"astro",
 	"basedpyright",
 	"bashls",
 	"clojure_lsp",
@@ -61,6 +62,7 @@ vim.lsp.enable({
 	"gopls",
 	"helm_ls",
 	"hls",
+	"html",
 	"lua_ls",
 	"marksman",
 	"ocamllsp",
