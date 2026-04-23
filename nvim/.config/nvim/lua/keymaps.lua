@@ -58,7 +58,7 @@ vim.keymap.set("n", "x", '"_x', opts)
 -- Global replace word under cursor for the whole file --
 vim.keymap.set(
 	"n",
-	"<leader>s",
+	"<leader>rw",
 	[[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left>]],
 	{ desc = "Replace word under cursor globally" }
 )
