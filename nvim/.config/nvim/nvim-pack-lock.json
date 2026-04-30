@@ -48,6 +48,10 @@
       "rev": "0775e567b6c0be96d01a61795f7b64c1758262f6",
       "src": "https://github.com/nvimdev/dashboard-nvim"
     },
+    "everforest": {
+      "rev": "aeef62ee97872d2557d25904d160ec93a4a355f8",
+      "src": "https://github.com/sainnhe/everforest"
+    },
     "everforest-nvim": {
       "rev": "557bce922401e247a596583679bc181d4d688554",
       "src": "https://github.com/neanias/everforest-nvim"
@@ -188,6 +192,10 @@
       "rev": "cf2a288696b03d0934da713d66c6d71557b5c997",
       "src": "https://github.com/rose-pine/neovim"
     },
+    "sonokai": {
+      "rev": "b023c5280b16fe2366f5e779d8d2756b3e5ee9c3",
+      "src": "https://github.com/sainnhe/sonokai"
+    },
     "tabout.nvim": {
       "rev": "9a3499480a8e53dcaa665e2836f287e3b7764009",
       "src": "https://github.com/abecodes/tabout.nvim"
@@ -199,6 +207,10 @@
     "telescope.nvim": {
       "rev": "ad7d9580338354ccc136e5b8f0aa4f880434dcdc",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
+    },
+    "thorn.nvim": {
+      "rev": "a793d5026ae09a17da175c5d8bd884df18a4b9a1",
+      "src": "https://github.com/jpwol/thorn.nvim"
     },
     "toggleterm.nvim": {
       "rev": "9a88eae817ef395952e08650b3283726786fb5fb",

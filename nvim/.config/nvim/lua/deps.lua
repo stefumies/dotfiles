@@ -49,7 +49,7 @@ vim.pack.add({
 	{ src = "https://github.com/Wansmer/treesj" },
 	{ src = "https://github.com/toppair/peek.nvim" },
 	{ src = "https://github.com/olimorris/onedarkpro.nvim" },
-
+	{ src = "https://github.com/sainnhe/everforest" },
 })
 
 vim.lsp.enable({
