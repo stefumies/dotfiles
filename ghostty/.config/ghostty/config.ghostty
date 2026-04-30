@@ -1,7 +1,8 @@
 # typography
 # font-family = "JetBrainsMono Nerd Font"
 # font-family = "0xProto Nerd Font Mono"
-font-family = "FiraCode Nerd Font"
+# font-family = "FiraCode Nerd Font"
+font-family = "ZedMono Nerd Font"
 font-size = 16
 
 background-opacity = 0.96
@@ -9,7 +10,7 @@ background-blur = true
 
 # Theme (Official Built-in Name)
 # theme = Desert
-theme = Atom One Dark
+theme = Everforest Dark Hard
 keybind = ctrl+enter=text:\x0d
 
 # Window Geometry (Fixes the "too small" issue)
