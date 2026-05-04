@@ -1,0 +1,30 @@
+{
+  "theme": {
+    "mode": "light",
+    "light": "One Light",
+    "dark": "One Dark Pro",
+  },
+  "ui_font_size": 18,
+  "buffer_font_size": 18,
+  "base_keymap": "VSCode",
+  "disable_ai": true,
+  "telemetry": {
+    "metrics": false,
+  },
+  "title_bar": {
+    "show_menus": true,
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+  "terminal": {
+    "dock": "bottom",
+    "font_size": 18,
+  },
+  "collaboration_panel": {
+    "button": false,
+  },
+  "outline_panel": {
+    "button": false,
+  },
+}
