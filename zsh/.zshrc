@@ -77,4 +77,5 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
 
 [ -f "/home/stefumies/.ghcup/env" ] && . "/home/stefumies/.ghcup/env" # ghcup-env
-. "/home/stephendavies/.deno/env"
+# . "/home/stephendavies/.deno/env"
+. "/home/stefumies/.deno/env"
