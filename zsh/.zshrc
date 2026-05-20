@@ -72,10 +72,9 @@ export NVM_DIR="$HOME/.nvm"
 
 [[ ! -r '/home/stephendavies/.opam/opam-init/init.zsh' ]] || source '/home/stephendavies/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 
-source ~/.zsh/zsh-autosuggestions
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
 
 [ -f "/home/stefumies/.ghcup/env" ] && . "/home/stefumies/.ghcup/env" # ghcup-env
-# . "/home/stephendavies/.deno/env"
-. "/home/stefumies/.deno/env"
+. "$HOME/.deno/env"
